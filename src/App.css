@@ -1,0 +1,49 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background: linear-gradient(white, red);
+}
+.App {
+  width: 100%;
+  height: 100vh;
+}
+.mainContent {
+  margin: 10px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+.outputContainer {
+  grid-column: 1/-1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.outputContainer .privous_data {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.outputContainer .current_data {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.mainContent > button {
+  background-color: rgba(255, 255, 255, 0.75);
+  font-size: 25px;
+}
+
+.mainContent > button:hover {
+  background-color: white;
+}
